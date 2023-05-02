@@ -208,8 +208,8 @@ h4 {
     margin-left: 3vh;
 }
 
-a {
-color: black;
-  text-decoration: underline transparent;
-  font-size: 4vh;
+.infoContact a {
+    color: black;
+    text-decoration: underline transparent;
+    font-size: 4vh;
 }
