@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="">
+    <link rel="stylesheet" href="/Static/accueil.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<header>
+    <ul class="menu">
+        <div class="a"><a href="/accueil.html" id="home">home</a></div>
+        <div class="a"><a href="#titre2" id="info">A propos</a></div>
+        <div class="a"><a href="#titre3" id="projet">projets</a></div>
+        <div class="a"><a href="#titre4" id="contact">Contact</a></div>
+        <div class="a"><a href="https://github.com/lucasrebl?tab=repositories"><img src="../Static/Image/GitHub.png" id="Git"></a></div>
+    </ul>
+</header>
+
+<body>
+
+    <div class="titre">
+        <h1>Lucas Reboulet</h1>
+        <div class="description">
+            <h2>étudiant informatique</h2>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="titre2" id="titre2">
+            <h3>~A propos</h3>
+            <div class="container">
+                <div class="button-container">
+                    <button class="button" type="button" onclick="showContent('presentation')"><h4>presentation</h4></button>
+                    <button class="button" type="button" onclick="showContent('competences')"><h4>compétances</h4></button>
+                    <button class="button" type="button" onclick="showContent('langue')"><h4>langue</h4></button>
+                    <button class="button" type="button" onclick="showContent('passion')"><h4>passion</h4></button>
+                </div>
+                <div class="article" id="presentation"><p><br>Actuellement en Bachlor 1 informatique, je suis un jeune étudiant souhaitant (pour l'instant) se specialiser dans le développement web.<br>Mais avant de prendre ma déscision final j'aimerais découvrir d'avantage de chose pour être sur de faire ce qui me plait le plus <br><br> si vous shouaiter en apprendre d'avantage sur moi je vous invite à me contacter, télécharger mon cv et explorer ce site.</p></div>
+                <div class="article" id="competences"><p><br>Web: html/css et maîtise de base de js et de php.<br>base de données: maîtrise de base de MySQL.<br>Programation: maîtrise moyenne de go, python et java.</p></div>
+                <div class="article" id="langue"><p><br>Français: langue maternel.<br>Anglais: niveau B1.<br>Espagnol niveau A2</p></div>
+                <div class="article" id="passion"><p><br>le sport: j'ai pratiquer du foot pendant 10 ans et du badminton pendant 3 ans.<br>les mangas: je passe pas mal de mon temps libre à lire de nouvelles oeuvres.</p></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="projet">
+        <div class="titre3" id="titre3">
+            <h3>~Projets</h3>
+            <div class="projet">
+                <div class="InfoProjet"><p><br>Dans cette partie vous pourrez avoir accès à une présentation et au GitHub de plein de projets que j'aurais réalisé que ce soit personnels ou professionels.</p></div>
+                <div class="projet1" id="projet1"><p><br>Je suis désolé mais il n'y a pour l'instant aucun de mes projet disponnible, mais ne vous inquiter pas ils arrivent très bientôt.<br>Si vous avez des questions n'hésitez pas a me contacter.</p></div>
+                <div class="projet2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="titre4" id="titre4">
+            <h3>~Contact</h3>
+            <div class="infoContact">
+                <p><br>Un projet ? Une question ? Ou autre chose. <br> N'hésitez pas à m'envoyer un mail en cliquant ici: <a href="mailto:rebouletlucas@gmail.com">Envoyer votre Mail</a>
+                <br><br><a href="/Static/cv.pdf">Télécharger mon cv</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPresentation() {
+            document.getElementById("presentation").innerHTML = "Contenu de la présentation";
+            document.getElementById("compétances").innerHTML = "";
+            document.getElementById("langue").innerHTML = "";
+            document.getElementById("passion").innerHTML = "";
+        }
+
+        function showCompetences() {
+            document.getElementById("presentation").innerHTML = "";
+            document.getElementById("compétances").innerHTML = "Contenu des compétences";
+            document.getElementById("langue").innerHTML = "";
+            document.getElementById("passion").innerHTML = "";
+        }
+
+        function showLangue() {
+            document.getElementById("presentation").innerHTML = "";
+            document.getElementById("compétances").innerHTML = "";
+            document.getElementById("langue").innerHTML = "Contenu de la langue";
+            document.getElementById("passion").innerHTML = "";
+        }
+
+        function showPassion() {
+            document.getElementById("presentation").innerHTML = "";
+            document.getElementById("compétances").innerHTML = "";
+            document.getElementById("langue").innerHTML = "";
+            document.getElementById("passion").innerHTML = "Contenu de la passion";
+        }
+
+        function showContent(id) {
+            // Cacher toutes les div
+            var divs = document.getElementsByClassName("article");
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].classList.remove("show");
+            }
+
+            // Afficher la div appropriée
+            document.getElementById(id).classList.add("show");
+        }
+    </script>
+
+</body>
+
+</html>
