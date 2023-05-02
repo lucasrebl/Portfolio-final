@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    margin: 0;
+    background-color: #2b333b;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+.a{
+    margin-top: 3.5vh;
+    display: flex;
+    margin-right: 5vh;
+}
+
+a {
+    font-size: 20px;
+}
+
+.menu a{
+  color:white;
+  text-decoration: underline transparent;
+  font-weight: bold;
+}  
+.menu a:hover{
+    font-weight: bold;
+    text-decoration: underline transparent;
+    color: #9ba8ab;
+}
+
+#Git {
+    height: 5vh;
+    margin-top: -1vh;
+}
+
+@media (max-width: 390px) {
+    .menu a {
+        margin: auto;
+        margin-left:4vh;
+        font-family: gill Sans,sans-serif;
+        text-align: center;
+        color: white;
+        text-decoration: underline transparent;
+        font-size: 14px;
+    }
+}
+
+.titre {
+    color: black;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+h1 {
+    font-size: 125px;
+}
+h2 {
+    margin-top: 2vh;
+    font-size: 35px;
+}
+h3 {
+    font-size: 35px;
+}
+h4 {
+    font-size: 20px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    background-color: #9ba8ab;
+    height: 9vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    border-radius: 15vh;
+}
+
+.titre2 {
+    margin-top: 10vh;
+    margin-left: 5vh;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+}
+
+.button-container {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.button {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    height: 8vh;
+    width: 30vh;
+    border-radius: 15vh;
+    background-color: #9ba8ab;
+    border: solid 0;
+}
+
+.article {
+    background-color: #9ba8ab;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 40vh;
+    width: 150vh;
+    margin-left: 24.5vh;
+    border-radius: 5vh;
+    display: none;
+}
+
+.article.show {
+    display: block;
+}
+
+.titre3 {
+    margin-left: 5vh;
+}
+
+.projet {
+    display: flex;
+    justify-content: center;
+    margin-right: 2vh;
+}
+
+.InfoProjet {
+    background-color: #9ba8ab;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    height: 40vh;
+    width: 60vh;
+    border-radius: 5vh;
+}
+
+.InfoProjet p {
+    margin-left: 3vh;
+    font-size: 4vh;
+}
+
+.projet1 {
+    background-color: #9ba8ab;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    height: 40vh;
+    width: 60vh;
+    border-radius: 5vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+#projet1 p {
+    margin-left: 3vh;
+    font-size: 4vh;
+}
+
+.projet2 {
+    background-color: #9ba8ab;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    height: 40vh;
+    width: 60vh;
+    border-radius: 5vh;
+}
+
+.titre4 {
+    margin-left: 5vh;
+}
+
+.infoContact {
+    background-color: #9ba8ab;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 40vh;
+    width: 150vh;
+    border-radius: 5vh;
+    margin-left: 24.5vh;
+}
+
+.infoContact p {
+    margin-left: 3vh;
+    font-size: 4vh;
+}
+
+#presentation p {
+    font-size: 4vh;
+    margin-left: 3vh;
+}
+
+#competences p {
+    font-size: 5vh;
+    margin-left: 3vh;
+}
+
+#langue p {
+    font-size: 5vh;
+    margin-left: 3vh;
+}
+
+#passion p {
+    font-size: 5vh;
+    margin-left: 3vh;
+}
+
+a {
+color: black;
+  text-decoration: underline transparent;
+  font-size: 4vh;
+}
