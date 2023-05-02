@@ -59,16 +59,6 @@ a {
 h1 {
     font-size: 125px;
 }
-h2 {
-    margin-top: 2vh;
-    font-size: 35px;
-}
-h3 {
-    font-size: 35px;
-}
-h4 {
-    font-size: 20px;
-}
 
 .description {
     display: flex;
@@ -79,6 +69,40 @@ h4 {
     margin-right: 30vh;
     border-radius: 15vh;
 }
+
+h2 {
+    margin-top: 2vh;
+    font-size: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+    .titre {
+        font-size: 50px;
+        margin-top: 10vh;
+    }
+    
+    h1 {
+        font-size: 70px;
+    }
+    
+    .description {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        border-radius: 5vh;
+    }
+    h2 {
+        font-size: 25px;
+        margin-top: 1vh;
+    }
+}
+
+h3 {
+    font-size: 35px;
+}
+h4 {
+    font-size: 20px;
+}
+
 
 .titre2 {
     margin-top: 10vh;
@@ -118,6 +142,37 @@ h4 {
 
 .article.show {
     display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    h3 {
+        font-size: 25px;
+    }
+    
+    h4 {
+        font-size: 15px;
+    }
+    
+    .titre2 {
+        margin-top: 5vh;
+        margin-left: 2vh;
+        font-size: 30px;
+    }
+    
+    .button {
+        height: 6vh;
+        width: 20vh;
+        border-radius: 10vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    
+    .article {
+        height: 20vh;
+        width: 80vh;
+        margin-left: 12vh;
+        margin-right: 4vh;
+    }
 }
 
 .titre3 {
@@ -169,6 +224,33 @@ h4 {
     border-radius: 5vh;
 }
 
+
+@media only screen and (max-width: 768px) {
+    .titre3 {
+        margin-left: 2vh;
+        font-size: 30px;
+    }
+    
+    .projet {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .InfoProjet,
+    .projet1,
+    .projet2 {
+        height: 25vh;
+        width: 80vw;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    
+    .InfoProjet p,
+    #projet1 p {
+        font-size: 3vh;
+    }
+}
+
 .titre4 {
     margin-left: 5vh;
 }
@@ -212,4 +294,50 @@ h4 {
     color: black;
     text-decoration: underline transparent;
     font-size: 4vh;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .titre4 {
+        margin-left: 2vh;
+    }
+
+    .infoContact {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        height: 15vh;
+        width: 90vw;
+        border-radius: 5vh;
+        margin-left: 5vw;
+    }
+
+    .infoContact p {
+        font-size: 2vh;
+        margin-left: 2vh;
+    }
+
+    #presentation p {
+        font-size: 2vh;
+        margin-left: 2vh;
+    }
+
+    #competences p {
+        font-size: 3vh;
+        margin-left: 2vh;
+    }
+
+    #langue p {
+        font-size: 3vh;
+        margin-left: 2vh;
+    }
+
+    #passion p {
+        font-size: 3vh;
+        margin-left: 2vh;
+    }
+
+    .infoContact a {
+        font-size: 2vh;
+    }
+
 }
